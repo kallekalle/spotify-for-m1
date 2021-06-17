@@ -41,25 +41,25 @@ nativefier "https://open.spotify.com" --name Spotify --icon icon.icns --widevine
 Optional:
 Add ```--title-bar-style hidden``` to the end of the command if you prefer [a hidden titlebar](https://imgur.com/a/xsHr5m8)
 
-### 3. Install castLabs EVS
+### 4. Install castLabs EVS
 
 ```
 python3 -m pip install --upgrade castlabs-evs
 ```
 
-### 4. Create an EVS account
+### 5. Create an EVS account
 
 ```
 python3 -m castlabs_evs.account signup
 ```
 
-### 5. EVS-sign the app
+### 6. EVS-sign the app
 
 ```
 python3 -m castlabs_evs.vmp sign-pkg Spotify-darwin-arm64
 ```
 
-### 6. Verify that the app has been properly signed
+### 7. Verify that the app has been properly signed
 
 ```
 python3 -m castlabs_evs.vmp verify-pkg Spotify-darwin-arm64
