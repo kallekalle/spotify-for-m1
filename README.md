@@ -28,8 +28,13 @@ git clone https://github.com/kallekalle/spotify-for-m1
 
 ### 2. Open Terminal and type:
 
-```bash
+```
 cd Spotify-for-M1
+```
+
+### 3. Navigate to the directory
+
+```
 nativefier "https://open.spotify.com" --name Spotify --icon icon.icns --widevine --inject spotify.js --inject spotify.css --user-agent firefox
 ```
 
