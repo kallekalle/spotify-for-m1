@@ -5,11 +5,11 @@ A native Spotify desktop app for Apple Silicon, built using [Nativefier](https:/
 ## Installing dependencies
 ### 1. [Python 3](https://www.python.org/downloads/)
 
- - Download and install the latest version from the website
+ - Download and install the latest version from the website. Python is required for signing the app
 
 ### 2. [Node.js](https://nodejs.org/en/)
 
- - Download and install the latest version from the website
+ - Download and install the latest version from the website. Node.js is used for installing Nativefier.
 
 ### 3. [Nativefier](https://github.com/nativefier/nativefier)
 
