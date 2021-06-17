@@ -26,20 +26,20 @@ A native Spotify desktop app for Apple Silicon, built using [Nativefier](https:/
 git clone https://github.com/kallekalle/spotify-for-m1
 ```
 
-### 2. Open Terminal and type:
+### 2. Navigate to the directory
 
 ```
 cd Spotify-for-M1
 ```
 
-### 3. Navigate to the directory
+### 3. Build the app:
 
 ```
 nativefier "https://open.spotify.com" --name Spotify --icon icon.icns --widevine --inject spotify.js --inject spotify.css --user-agent firefox
 ```
 
 Optional:
-Add ```--title-bar-style hidden``` to the end of the previous command if you prefer [a hidden titlebar](https://imgur.com/a/xsHr5m8)
+Add ```--title-bar-style hidden``` to the end of the command if you prefer [a hidden titlebar](https://imgur.com/a/xsHr5m8)
 
 ### 3. Install castLabs EVS
 
