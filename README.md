@@ -2,48 +2,66 @@
 
 A native Spotify desktop app for Apple Silicon, built using [Nativefier](https://github.com/nativefier/nativefier)
 
-# Installing dependencies
-This app requires:
-1. [Python 3](https://www.python.org/downloads/)
+## Installing dependencies
+### 1. [Python 3](https://www.python.org/downloads/)
 
-Download and install the latest version from the website
+ - Download and install the latest version from the website
 
-2. [Node.js](https://nodejs.org/en/)
+### 2. [Node.js](https://nodejs.org/en/)
 
-Download and install the latest version from the website
+ - Download and install the latest version from the website
 
-[Nativefier](https://github.com/nativefier/nativefier)
+### 3. [Nativefier](https://github.com/nativefier/nativefier)
 
-Open Terminal and type
-```$ npm install -g nativefier```
+ - Open Terminal and type:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```npm install -g nativefier```
 
 
-# Building the app
+## Building the app
 
-1. Clone project
-```git clone https://github.com/kallekalle/spotify-for-m1```
+### 1. Clone project
 
-2. Open Terminal and type:
-```cd Spotify-for-M1
+```
+git clone https://github.com/kallekalle/spotify-for-m1
+```
+
+### 2. Open Terminal and type:
+
+```bash
+cd Spotify-for-M1
 nativefier "https://open.spotify.com" --name Spotify --icon icon.icns --widevine --inject spotify.js --inject spotify.css --user-agent firefox```
+```
 
 Optional:
-Add '--title-bar-style hidden' to the end of the previous command if you prefer [a hidden titlebar](https://imgur.com/a/xsHr5m8)
+Add ```--title-bar-style hidden``` to the end of the previous command if you prefer [a hidden titlebar](https://imgur.com/a/xsHr5m8)
 
-3. Install castLabs EVS
-```python3 -m pip install --upgrade castlabs-evs```
+### 3. Install castLabs EVS
 
-4. Create an EVS account
-```python3 -m castlabs_evs.account signup```
+```
+python3 -m pip install --upgrade castlabs-evs
+```
 
-5. EVS-sign the app
-```python3 -m castlabs_evs.vmp sign-pkg Spotify-darwin-arm64```
+### 4. Create an EVS account
 
-6. Verify that it has been properly signed
-```python3 -m castlabs_evs.vmp verify-pkg Spotify-darwin-arm64```
+```
+python3 -m castlabs_evs.account signup
+```
+
+### 5. EVS-sign the app
+
+```
+python3 -m castlabs_evs.vmp sign-pkg Spotify-darwin-arm64
+```
+
+### 6. Verify that the app has been properly signed
+
+```
+python3 -m castlabs_evs.vmp verify-pkg Spotify-darwin-arm64
+```
 
 
-# Credits
+## Credits
 
 Made with [Nativefier](https://github.com/nativefier/nativefier).
 
