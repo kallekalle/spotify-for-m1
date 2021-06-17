@@ -30,7 +30,7 @@ git clone https://github.com/kallekalle/spotify-for-m1
 
 ```bash
 cd Spotify-for-M1
-nativefier "https://open.spotify.com" --name Spotify --icon icon.icns --widevine --inject spotify.js --inject spotify.css --user-agent firefox```
+nativefier "https://open.spotify.com" --name Spotify --icon icon.icns --widevine --inject spotify.js --inject spotify.css --user-agent firefox
 ```
 
 Optional:
