@@ -65,6 +65,18 @@ python3 -m castlabs_evs.vmp sign-pkg Spotify-darwin-arm64
 python3 -m castlabs_evs.vmp verify-pkg Spotify-darwin-arm64
 ```
 
+### 8. Locate the app
+
+Navigate to
+
+```
+/Users/[user]/spotify-for-m1/Spotify-darwin-arm64
+```
+
+and run the Spotify app.
+
+Optional:
+Create a shortcut and move it to your dock/desktop/apps folder etc.
 
 ## Credits
 
